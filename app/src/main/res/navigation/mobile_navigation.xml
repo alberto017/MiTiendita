@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mitiendita.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.mitiendita.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.mitiendita.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_promociones"
+        android:name="com.example.mitiendita.Fragments.PromotionListFragment"
+        android:label="Promociones"
+        tools:layout="@layout/fragment_promotion_list" />
+    <fragment
+        android:id="@+id/categoryListFragment"
+        android:name="com.example.mitiendita.Fragments.CategoryListFragment"
+        android:label="Categorias"
+        tools:layout="@layout/fragment_category_list" />
+    <fragment
+        android:id="@+id/nav_carrito"
+        android:name="com.example.mitiendita.Fragments.CartListFragment"
+        android:label="Mi carrito de compras"
+        tools:layout="@layout/fragment_cart_list" />
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.example.mitiendita.Fragments.OrderListFragment"
+        android:label="Ordenes realizadas"
+        tools:layout="@layout/fragment_order_list" />
+</navigation>
